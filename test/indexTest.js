@@ -9,8 +9,9 @@ chai.use( spies );
 
 
 describe( "index.js", () => {
-  describe( 'fetchBooks()', () => {
+ // this.timeout(10000); 
 
+  describe( 'fetchBooks()', () => {
     beforeEach( () => {
       window.document.body.innerHTML = '<main></main>'
       window.fetch = require( 'node-fetch' );
